@@ -1,0 +1,152 @@
+
+
+/*
+                      TEAM DE DESENVOLVIMENTO
+                      ANDROMEDA CODING SOLUTIONS 
+
+*/
+
+
+/*   Configurações gerais  */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+body{
+
+    background-color: white;
+    
+}
+
+.header {
+    width: 100%;
+    height: 700px;
+    background-color: #6600ff;
+    background-image: url("/assets/img/background/Banner\ marketing\ site\ estratégia\ digital\ roxo\ branco\ azul\ \(6\).png");
+}
+
+/*   Configurações do menu  */
+
+.header_menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "roboto";
+    flex-wrap: wrap;
+    
+    
+}
+
+.header_logo {
+    margin-left: -100px;
+    padding: 20px;
+
+}
+.header_logo img{
+    height: 80px;
+
+}
+.menu{
+    flex-wrap: wrap;
+}
+.menu li{
+    display: inline-flex;
+    margin: 20px;
+}
+.menu li a{
+    color: white !important;
+    display: inline-block;
+    font-size: 19px;
+    
+}
+.menu li a:hover{
+
+    
+    
+}
+
+.menu_afastado {
+    transition: background-color 0.9s, color 0.3s; 
+   
+}
+.menu_afastado a{
+    display: inline-block; 
+    border: 1px solid white;
+    padding: 15px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+ 
+    transition: background-color 0.9s, color 0.3s; 
+}
+.menu_afastado a:hover{
+ color: #6600ff;
+ background-color: white;
+ cursor: pointer;
+   
+}
+header img{
+    height: 500px;
+}
+
+/*   Configurações do menu  */
+
+.header_content{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.text_content{
+    color: white  ;
+    
+}
+
+.texte_titulo{
+    font-size: 20px !important; 
+    font-family: "exo";
+}
+.text_content h1{
+    line-height: 44.3px;
+    font-family: "exo";
+    color: white  ;
+    font-size: 34px;
+}
+
+.contratar_whats {
+    margin-top: 50px;
+}
+
+.contratar_whats a {
+    display: inline-block; 
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.9s, color 0.3s; 
+}
+.contratar_whats a:hover {
+    background-color: white;
+    color: #6600ff;
+    cursor: pointer;
+}
+
+.img_content{
+    text-align: center;
+}
+.img_content p{
+    color: white;
+    font-size: 20px;
+    font-family: "exo";
+}
