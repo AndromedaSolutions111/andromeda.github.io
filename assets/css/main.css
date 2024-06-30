@@ -1,11 +1,7 @@
-
-
 /*
                       TEAM DE DESENVOLVIMENTO
                       ANDROMEDA CODING SOLUTIONS 
-
 */
-
 
 /*   Configurações gerais  */
 
@@ -15,13 +11,10 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-
 }
 
 body{
-
     background-color: white;
-    
 }
 
 .header {
@@ -40,58 +33,91 @@ body{
     align-items: center;
     font-family: "roboto";
     flex-wrap: wrap;
-    
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    background-color: #6600ff; 
+}
+
+.menu_scroll {
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s;
+}
+
+.menu_color{
+    color: #6600ff !important;
 }
 
 .header_logo {
     margin-left: -100px;
     padding: 20px;
-
 }
+
 .header_logo img{
     height: 80px;
-
 }
+
 .menu{
     flex-wrap: wrap;
 }
+
 .menu li{
     display: inline-flex;
     margin: 20px;
 }
-.menu li a{
+
+.menu li a {
+    position: relative;
     color: white !important;
     display: inline-block;
     font-size: 19px;
-    
-}
-.menu li a:hover{
-
-    
-    
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: border-bottom-color 0.3s;
+    border-bottom: 2px solid transparent;
 }
 
-.menu_afastado {
-    transition: background-color 0.9s, color 0.3s; 
-   
+.menu li a:hover {
+    border-bottom: 2px solid #fffeff !important;
 }
-.menu_afastado a{
+
+.menu_scroll .menu li a {
+    color: #6600ff !important;
+    border-bottom: 2px solid transparent;
+}
+
+.menu_scroll .menu li a:hover {
+    border-bottom: 2px solid #6600ff !important;
+}
+
+.menu_afastado a {
     display: inline-block; 
     border: 1px solid white;
     padding: 15px;
     font-size: 20px;
     font-family: "Roboto", sans-serif;
     color: white;
- 
-    transition: background-color 0.9s, color 0.3s; 
+    transition: background-color 0.9s, color 0.3s;
 }
-.menu_afastado a:hover{
- color: #6600ff;
- background-color: white;
- cursor: pointer;
-   
+
+.menu_afastado a:hover {
+    color: #6600ff;
+    background-color: white;
 }
+
+.menu_scroll .menu_afastado a {
+    border: 1px solid #6600ff !important;
+    color: #6600ff !important;
+}
+
+.menu_scroll .menu_afastado a:hover {
+    border: 1px solid #6600ff !important;
+    color: white !important;
+    background-color: #6600ff;
+}
+
 header img{
     height: 500px;
 }
@@ -99,26 +125,26 @@ header img{
 /*   Configurações do menu  */
 
 .header_content{
-
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
-
+    margin-top: 120px;
 }
+
 .text_content{
-    color: white  ;
-    
+    color: white;
 }
 
 .texte_titulo{
     font-size: 20px !important; 
     font-family: "exo";
 }
+
 .text_content h1{
     line-height: 44.3px;
     font-family: "exo";
-    color: white  ;
+    color: white;
     font-size: 34px;
 }
 
@@ -136,6 +162,7 @@ header img{
     border-radius: 10px;
     transition: background-color 0.9s, color 0.3s; 
 }
+
 .contratar_whats a:hover {
     background-color: white;
     color: #6600ff;
@@ -145,6 +172,7 @@ header img{
 .img_content{
     text-align: center;
 }
+
 .img_content p{
     color: white;
     font-size: 20px;
