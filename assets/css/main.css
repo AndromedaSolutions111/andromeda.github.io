@@ -51,7 +51,7 @@ body{
 }
 
 .header_logo {
-    margin-left: -100px;
+    margin-left: -50px;
     padding: 20px;
 }
 
@@ -72,7 +72,7 @@ body{
     position: relative;
     color: white !important;
     display: inline-block;
-    font-size: 19px;
+    font-size: 17px;
     text-decoration: none;
     padding-bottom: 5px;
     transition: border-bottom-color 0.3s;
@@ -137,15 +137,15 @@ header img{
 }
 
 .texte_titulo{
-    font-size: 20px !important; 
+    font-size: 17px !important; 
     font-family: "exo";
 }
 
 .text_content h1{
-    line-height: 44.3px;
+    line-height: 33.3px;
     font-family: "exo";
     color: white;
-    font-size: 34px;
+    font-size: 17px;
 }
 
 .contratar_whats {
@@ -177,4 +177,32 @@ header img{
     color: white;
     font-size: 20px;
     font-family: "exo";
+}
+
+/*   fim da configuração do menu  */
+
+.section_titulo{
+    
+    color: #6600ff;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'exo';
+
+
+}
+.section_code{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-wrap: wrap;
+    font-family: exo;
+}
+.section_info img{
+    height: 300px;
+}
+.code_info img{
+    height: 200px;
 }
