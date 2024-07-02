@@ -20,7 +20,7 @@ body{
 .header {
     width: 100%;
     height: 700px;
-    background-color: #6600ff;
+    background-color: #6525E9;
     background-image: url("/assets/img/background/Banner\ marketing\ site\ estratégia\ digital\ roxo\ branco\ azul\ \(6\).png");
 }
 
@@ -37,7 +37,7 @@ body{
     top: 0;
     left: 0;
     z-index: 1000; 
-    background-color: #6600ff; 
+    background-color: #6525E9; 
 }
 
 .menu_scroll {
@@ -47,7 +47,7 @@ body{
 }
 
 .menu_color{
-    color: #6600ff !important;
+    color: #6525E9 !important;
 }
 
 .header_logo {
@@ -89,7 +89,7 @@ body{
 }
 
 .menu_scroll .menu li a:hover {
-    border-bottom: 2px solid #6600ff !important;
+    border-bottom: 2px solid #6525E9 !important;
 }
 
 .menu_afastado a {
@@ -103,19 +103,19 @@ body{
 }
 
 .menu_afastado a:hover {
-    color: #6600ff;
+    color: #6525E9;
     background-color: white;
 }
 
 .menu_scroll .menu_afastado a {
-    border: 1px solid #6600ff !important;
-    color: #6600ff !important;
+    border: 1px solid #6525E9 !important;
+    color: #6525E9 !important;
 }
 
 .menu_scroll .menu_afastado a:hover {
-    border: 1px solid #6600ff !important;
+    border: 1px solid #6525E9 !important;
     color: white !important;
-    background-color: #6600ff;
+    background-color: #6525E9;
 }
 
 header img{
@@ -137,7 +137,7 @@ header img{
 }
 
 .texte_titulo{
-    font-size: 17px !important; 
+    font-size: 25px !important; 
     font-family: "exo";
 }
 
@@ -145,7 +145,7 @@ header img{
     line-height: 33.3px;
     font-family: "exo";
     color: white;
-    font-size: 17px;
+    font-size: 30px;
 }
 
 .contratar_whats {
@@ -165,7 +165,7 @@ header img{
 
 .contratar_whats a:hover {
     background-color: white;
-    color: #6600ff;
+    color: #6525E9 ;
     cursor: pointer;
 }
 
@@ -183,11 +183,13 @@ header img{
 
 .section_titulo{
     
-    color: #6600ff;
+    color: #190439;
     padding: 10px;
     width: 100%;
     text-align: center;
-    font-family: 'exo';
+    font-family: 'roboto';
+    font-size: 30px;
+    margin-top: 20px;
 
 
 }
@@ -199,10 +201,13 @@ header img{
     align-items: center; 
     flex-wrap: wrap;
     font-family: exo;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 100px;
 }
 .section_info img{
     height: 300px;
 }
 .code_info img{
-    height: 200px;
+    height: 300px;
 }
