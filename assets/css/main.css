@@ -206,3 +206,127 @@ header img{
 .code_info img{
     height: 200px;
 }
+
+
+/* Estilos gerais */
+
+@media screen and (max-width: 768px) {
+    /* Ajustes para telas menores, por exemplo, tablets e smartphones */
+    .header_menu {
+        justify-content: center; /* Centraliza os itens do menu */
+        padding: 10px; /* Adapta o espaçamento do menu */
+    }
+
+    .menu {
+        text-align: center; /* Centraliza os itens do menu */
+    }
+
+    .menu li {
+        margin: 10px; /* Reduz a margem entre os itens do menu */
+    }
+
+    .menu_afastado {
+        display: none; /* Esconde o menu lateral em telas menores */
+    }
+}
+
+/* Estilos específicos para elementos */
+
+.header {
+    background-image: url("/assets/img/background/Banner\ marketing\ site\ estratégia\ digital\ roxo\ branco\ azul\ \(6\).png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Utiliza a altura total da tela */
+}
+
+.text_content h1 {
+    font-size: 2em; /* Tamanho de fonte responsivo */
+}
+
+.texte_titulo {
+    font-size: 1.5em; /* Tamanho de fonte responsivo */
+}
+
+.section_info img {
+    max-width: 100%; /* Imagens responsivas */
+    height: auto;
+}
+
+.code_info img {
+    max-width: 100%; /* Imagens responsivas */
+    height: auto;
+}
+
+
+
+
+
+
+
+/* Configurações para o ícone de menu */
+.menu-icon {
+    display: none; /* Ocultar inicialmente em telas maiores */
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    margin-right: 20px; /* Espaçamento entre o ícone e o resto do conteúdo */
+}
+
+/* Estilos específicos para telas menores */
+@media screen and (max-width: 768px) {
+    .header_menu {
+        justify-content: space-between; /* Espaço entre os itens e o ícone de menu */
+        padding: 10px; /* Espaçamento menor */
+    }
+
+    .menu {
+        display: none; /* Ocultar menu principal em telas menores */
+    }
+
+    .menu-icon {
+        display: block; /* Mostrar ícone de menu */
+    }
+
+    .menu_afastado {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #6600ff;
+        height: 100%;
+        width: 250px;
+        display: none; /* Ocultar menu afastado inicialmente */
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px; /* Espaçamento para alinhar o menu */
+    }
+
+    .menu_afastado.active {
+        display: flex; /* Mostrar menu afastado quando ativo */
+    }
+
+    .menu_afastado ul {
+        list-style: none;
+    }
+
+    .menu_afastado li {
+        margin-bottom: 20px;
+    }
+
+    .menu_afastado a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+header {
+    background-image: url("/assets/img/background/Banner marketing site estratégia digital roxo branco azul (6).png");
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Utiliza a altura total da tela */
+}
+
+header img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do contêiner */
+    height: auto; /* Permite que a altura da imagem seja ajustada proporcionalmente à largura */
+}
