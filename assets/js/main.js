@@ -27,3 +27,16 @@ window.addEventListener('scroll', function() {
         menu.classList.remove('menu_scroll');
     }
 });
+
+
+// Selecionar o ícone de menu
+const menuIcon = document.querySelector('.menu-icon');
+
+// Selecionar o menu afastado
+const menuAfastado = document.querySelector('.menu_afastado');
+
+// Adicionar evento de clique no ícone de menu
+menuIcon.addEventListener('click', () => {
+    menuAfastado.classList.toggle('active'); // Alternar a classe 'active' no menu afastado
+});
+
