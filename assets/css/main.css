@@ -20,8 +20,7 @@ body{
 .header {
     width: 100%;
     height: 700px;
-    background-color: #6525E9;
-    background-image: url("/assets/img/background/Banner\ marketing\ site\ estratégia\ digital\ roxo\ branco\ azul\ \(6\).png");
+
 }
 
 /*   Configurações do menu  */
@@ -37,26 +36,27 @@ body{
     top: 0;
     left: 0;
     z-index: 1000; 
-    background-color: #6525E9; 
+ 
 }
 
 .menu_scroll {
-    background-color: white;
+    background-color:#335EEA;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
     transition: background-color 0.3s;
 }
 
 .menu_color{
-    color: #6525E9 !important;
+  
 }
 
 .header_logo {
-    margin-left: -50px;
+    margin-left: 50px;
     padding: 20px;
 }
 
-.header_logo img{
-    height: 80px;
+.header_logo a{
+  font-size: 23px;
+  color: #335EEA;
 }
 
 .menu{
@@ -70,7 +70,7 @@ body{
 
 .menu li a {
     position: relative;
-    color: white !important;
+    color: #2e2148 !important;
     display: inline-block;
     font-size: 17px;
     text-decoration: none;
@@ -96,15 +96,18 @@ body{
     display: inline-block; 
     border: 1px solid white;
     padding: 15px;
-    font-size: 20px;
+    font-size: 16px;
     font-family: "Roboto", sans-serif;
     color: white;
     transition: background-color 0.9s, color 0.3s;
+    background-color: #335EEA;
+    border-radius: 10px;
 }
 
 .menu_afastado a:hover {
     color: #6525E9;
     background-color: white;
+    border: 1px solid #335EEA;
 }
 
 .menu_scroll .menu_afastado a {
@@ -133,19 +136,31 @@ header img{
 }
 
 .text_content{
-    color: white;
+  
+    height: 400px !important;
+    margin: 100px 200px;
+    width: 2000px;
+    
 }
 
 .texte_titulo{
     font-size: 25px !important; 
     font-family: "exo";
+    color: black;
+    margin-left: 10px;
 }
 
 .text_content h1{
     line-height: 33.3px;
     font-family: "exo";
-    color: white;
-    font-size: 30px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin-left: 10px;
+
+    color: rgb(92, 92, 92);
+}
+.andro_header_span{
+    color: #335EEA;
 }
 
 .contratar_whats {
@@ -155,16 +170,21 @@ header img{
 .contratar_whats a {
     display: inline-block; 
     border: 1px solid white;
-    padding: 20px;
-    font-size: 20px;
+    padding: 15px;
+    font-size: 18px;
     font-family: "Roboto", sans-serif;
     color: white;
     border-radius: 10px;
     transition: background-color 0.9s, color 0.3s; 
-}
+    margin-left: 10px;
+    background-color:#335EEA;
 
+}
+.contratar_whats_2{
+    background-color: #E1E7FC !important;
+    color: #335EEA !important;
+}
 .contratar_whats a:hover {
-    background-color: white;
     color: #6525E9;
     cursor: pointer;
 }
