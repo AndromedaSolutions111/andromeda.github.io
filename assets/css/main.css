@@ -1,233 +1,226 @@
-/*
-                      TEAM DE DESENVOLVIMENTO
-                      ANDROMEDA CODING SOLUTIONS 
-*/
+    /* Adicione isso no final do seu arquivo CSS */
 
-/*   Configurações gerais  */
+    /* Configurações gerais */
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+    }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-
-body{
-    background-color: white;
-}
-
-.header {
-    width: 100%;
-    height: 700px;
-
-}
-
-/*   Configurações do menu  */
-
-.header_menu{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: "roboto";
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; 
- 
-}
-
-.menu_scroll {
-    background-color:#335EEA;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-    transition: background-color 0.3s;
-}
-
-.menu_color{
+    body {
+        background-color: white;
+        height: 100vh;
+    }
   
-}
 
-.header_logo {
-    margin-left: 50px;
-    padding: 20px;
-}
+    .header {
+        width: 100%;
+        height: 1000px;
+        background-position:top;    
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-image: url('/assets/img/background/background-image\ url\(\'..assetsimagensfundo.jpg\'\);.png');
+        background-size: 100%;
+    }
 
-.header_logo a{
-  font-size: 23px;
-  color: #335EEA;
-}
+    /* Configurações do menu */
+    .header_menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "roboto";
+        flex-wrap: wrap;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
 
-.menu{
-    flex-wrap: wrap;
-}
+    .menu_scroll {
+        background-color: #335EEA;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+    }
 
-.menu li{
-    display: inline-flex;
-    margin: 20px;
-}
+    .header_logo {
+        margin-left: 50px;
+        padding: 20px;
+    }
 
-.menu li a {
-    position: relative;
-    color: #2e2148 !important;
-    display: inline-block;
-    font-size: 17px;
-    text-decoration: none;
-    padding-bottom: 5px;
-    transition: border-bottom-color 0.3s;
-    border-bottom: 2px solid transparent;
-}
+    .header_logo a {
+        font-size: 23px;
+        color: #335EEA;
+    }
 
-.menu li a:hover {
-    border-bottom: 2px solid #fffeff !important;
-}
+    .menu {
+        flex-wrap: wrap;
+    }
 
-.menu_scroll .menu li a {
-    color: #6600ff !important;
-    border-bottom: 2px solid transparent;
-}
+    .menu li {
+        display: inline-flex;
+        margin: 20px;
+    }
 
-.menu_scroll .menu li a:hover {
-    border-bottom: 2px solid #6525E9 !important;
-}
+    .menu li a {
+        position: relative;
+        color: #2e2148 !important;
+        display: inline-block;
+        font-size: 17px;
+        text-decoration: none;
+        padding-bottom: 5px;
+        transition: border-bottom-color 0.3s;
+        border-bottom: 2px solid transparent;
+    }
 
-.menu_afastado a {
-    display: inline-block; 
-    border: 1px solid white;
-    padding: 15px;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    color: white;
-    transition: background-color 0.9s, color 0.3s;
-    background-color: #335EEA;
-    border-radius: 10px;
-}
+    .menu li a:hover {
+        border-bottom: 2px solid #fffeff !important;
+    }
 
-.menu_afastado a:hover {
-    color: #6525E9;
-    background-color: white;
-    border: 1px solid #335EEA;
-}
+    .menu_scroll .menu li a {
+        color: #6600ff !important;
+        border-bottom: 2px solid transparent;
+    }
 
-.menu_scroll .menu_afastado a {
-    border: 1px solid #6525E9 !important;
-    color: #6525E9 !important;
-}
+    .menu_scroll .menu li a:hover {
+        border-bottom: 2px solid #6525E9 !important;
+    }
 
-.menu_scroll .menu_afastado a:hover {
-    border: 1px solid #6525E9 !important;
-    color: white !important;
-    background-color: #6525E9;
-}
+    .menu_afastado a {
+        display: inline-block;
+        border: 1px solid white;
+        padding: 15px;
+        font-size: 16px;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        transition: background-color 0.9s, color 0.3s;
+        background-color: #335EEA;
+        border-radius: 10px;
+    }
 
-header img{
-    height: 500px;
-}
+    .menu_afastado a:hover {
+        color: #6525E9;
+        background-color: white;
+        border: 1px solid #335EEA;
+    }
 
-/*   Configurações do menu  */
+    .menu_scroll .menu_afastado a {
+        border: 1px solid #6525E9 !important;
+        color: #6525E9 !important;
+    }
 
-.header_content{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 120px;
-}
+    .menu_scroll .menu_afastado a:hover {
+        border: 1px solid #6525E9 !important;
+        color: white !important;
+        background-color: #6525E9;
+    }
 
-.text_content{
-  
-    height: 400px !important;
-    margin: 100px 200px;
-    width: 2000px;
+    header img {
+        height: 400px;
+    }
+
+    /* Configurações do menu */
+    .header_content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin:140px auto;
+        
+    }
     
-}
-
-.texte_titulo{
-    font-size: 25px !important; 
-    font-family: "exo";
-    color: black;
-    margin-left: 10px;
-}
-
-.text_content h1{
-    line-height: 33.3px;
-    font-family: "exo";
-    font-size: 22px;
-    letter-spacing: 3px;
-    margin-left: 10px;
-
-    color: rgb(92, 92, 92);
-}
-.andro_header_span{
-    color: #335EEA;
-}
-
-.contratar_whats {
-    margin-top: 50px;
-}
-
-.contratar_whats a {
-    display: inline-block; 
-    border: 1px solid white;
-    padding: 15px;
-    font-size: 18px;
-    font-family: "Roboto", sans-serif;
-    color: white;
-    border-radius: 10px;
-    transition: background-color 0.9s, color 0.3s; 
-    margin-left: 10px;
-    background-color:#335EEA;
-
-}
-.contratar_whats_2{
-    background-color: #E1E7FC !important;
-    color: #335EEA !important;
-}
-.contratar_whats a:hover {
-    color: #6525E9;
-    cursor: pointer;
-}
-
-.img_content{
-    text-align: center;
-}
-
-.img_content p{
-    color: white;
-    font-size: 20px;
-    font-family: "exo";
-}
-
-/*   fim da configuração do menu  */
-
-.section_titulo{
+    .text_content {
+        height: 400px !important;
+       
+        margin: 150px ;
+    }
     
-    color: #190439;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    font-family: 'roboto';
-    font-size: 30px;
-    margin-top: 20px;
+    .texte_titulo {
+       
+        font-size: 25px !important;
+        font-family: "exo";
+        color: black;
+        margin: 40px 10px;
+    }
 
+    .text_content h1 {
+        line-height: 33.3px;
+        font-family: "exo";
+        font-size: 22px;
+        letter-spacing: 3px;
+        margin-left: 10px;
+        color: rgb(92, 92, 92);
+    }
+    
+    .andro_header_span {
+        color: #335EEA;
+    }
+    
+    .contratar_whats {
+        margin: 130px 10px;
+    }
+    
+    .contratar_whats a {
+        display: inline-block;
+        border: 1px solid white;
+        padding: 15px;
+        font-size: 18px;
+        font-family: "Roboto", sans-serif;
+        color: white;
+        border-radius: 10px;
+        transition: background-color 0.9s, color 0.3s;
+        background-color: #335EEA;
+    }
 
-}
-.section_code{
-    width: 100%;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    flex-wrap: wrap;
-    font-family: exo;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 100px;
-}
-.section_info img{
-    height: 300px;
-}
-.code_info img{
-    height: 300px;
-}
+    .contratar_whats_2 {
+        background-color: #E1E7FC !important;
+        color: #335EEA !important;
+    }
+
+    .contratar_whats a:hover {
+        color: #6525E9;
+        cursor: pointer;
+    }
+
+    .img_content {
+        text-align: center;
+        margin-right: 100px;
+    }
+
+    .img_content p {
+        color: white;
+        font-size: 20px;
+        font-family: "exo";
+    }
+
+    .section_titulo {
+        color: #190439;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        font-family: 'roboto';
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .section_code {
+        width: 100%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-family: exo;
+        justify-content: space-around;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .section_info img {
+        height: 300px;
+    }
+
+    .code_info img {
+        height: 300px;
+    }
