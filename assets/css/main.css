@@ -99,7 +99,8 @@
         font-family: "Roboto", sans-serif;
         color: #6525E9;
         transition: background-color 0.9s, color 0.3s;
-            background-color: white !important;
+       background-color: white !important;
+       outline: none;
     }
 
     .menu_afastado a:hover {
@@ -246,7 +247,7 @@ textarea{
     border-top: white !;
     border-left: white;
     border-right: white;
-
+    font-size: px;
 }
 .button{
     padding: 10px;
