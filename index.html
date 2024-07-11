@@ -30,7 +30,9 @@
         <header class="header">
             <div class="header_menu">
                 <div class="header_logo">
-                    <a href="index.html">Andromeda.</a>
+                    <a href="index.html">
+                        <img src="assets/img/logo/logo_svg.svg" alt="Andromeda logo">
+                    </a>
                 </div>
                 <div class="menu">
                     <nav class="menu_fixo">
@@ -43,9 +45,10 @@
                     </nav>
                 </div>
                 <div class="menu_afastado">
-                    <box-icon name='menu-alt-right' ></box-icon>
+                    <div class="menu_responsi">
+                        <li><i class="bx bx-menu"></i></li>   
+                    </div>
                     <ul>
-                        <li><i class="bx bx-menu"></i></li>
                         <li><a href="#">Marcar Reunião</a></li>
                     </ul>
                 </div>
@@ -60,54 +63,8 @@
             </article>
         </header>
         <main>
-            <section class="services">
-                <div class="cartaz _esq">
-                        <p>
-                            ola mundo
-                        </p>
-
-                </div>
-                <div class="cartaz _direito formulario">
-
-                    <form action="https:/formsubmit.co/devmauroromao@gmail.com" method="post">
-                        <div class="form_paragrafo">
-                            <p>
-                                Entre em contacto
-                            </p>
-                        </div>
-                        <div class="formone">
-                            <input type="text" name="name" class="mail_input" required placeholder="Nome">
-                            <br>
-                            <input type="email" class="mail_input" name="email" placeholder="Email" required>
-                            <div class="second form">
-                                <textarea name="message" cols="30" rows="10" required placeholder="Escreva a sua mensagem  ..."></textarea>
-        
-                            </div>
-        
-                        </div>
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
-                        <div class="button">
-                            <button type="submit">Enviar Mensagem</button>
-        
-                        </div>
-        
-                    </form>
-                </div>
-            </section>
-            <section class="section_titulo">
-                <p>Explore o Universo Tecnológico com Andromeda 🚀</p>
-            </section>
-            <section class="section_code">
-                <div class="section_info">
-                    <img src="assets/img/diversas/phone mobile.jpg" alt="crie seu app connosco" class="box" data-aos="fade-up" data-aos-duration="1500">
-                </div>
-                <div class="code_info">
-                    <img src="assets/img/code.gif" alt="Nós trabalhamos assim _ Andromeda" class="box" data-aos="fade-up" data-aos-duration="1500">
-                </div>
-            </section>
-            <p>ola mundonod</p>
         </main>
+        
 
         <!-- JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -140,7 +97,7 @@
                     menu.classList.remove('menu_scroll');
                 }
             });
-
+                
             // Inicialize AOS
             AOS.init();
         </script>
