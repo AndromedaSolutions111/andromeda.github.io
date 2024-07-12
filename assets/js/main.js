@@ -1,42 +1,24 @@
 window.addEventListener('scroll', function() {
     var header = document.querySelector('.header');
     var menu = document.querySelector('.header_menu');
-    
-
-    if (window.scrollY > 10) {
-        menu.classList.add('menu_scroll');
-        console.log(menuElements)
-
-    } else {
-        menu.classList.remove('menu_scroll');
-    }
-});
-
-
-
-window.addEventListener('scroll', function() {
-    var header = document.querySelector('.header');
-    var menu = document.querySelector('.header_menu');
-    var menu_afastado = this.document.querySelector(".menu_afastado a")
+    var menu_afastado = document.querySelector(".menu_afastado a");
 
     if (window.scrollY > header.clientHeight) {
         menu.classList.add('menu_scroll');
-        menu_afastado.classList.add("..menu_scroll .menu_afastado a")
-
+        menu_afastado.classList.add("menu_scroll");
     } else {    
         menu.classList.remove('menu_scroll');
     }
 });
 
 
-// Selecionar o ícone de menu
-const menuIcon = document.querySelector('.menu-icon');
 
-// Selecionar o menu afastado
-const menuAfastado = document.querySelector('.menu_afastado');
+// - Menu escndido
+let menu_escondido = document.querySelector(".menu_escondido")
+let bx_menu = document.querySelector(".bx-menu")
+bx_menu.addEventListener("click", function(){
+    menu_escondido.classList.toggle("menu_ativo")
+    bx_menu.classList.toggle("bx_color")
 
-// Adicionar evento de clique no ícone de menu
-menuIcon.addEventListener('click', () => {
-    menuAfastado.classList.toggle('active'); // Alternar a classe 'active' no menu afastado
-});
-
+    
+})

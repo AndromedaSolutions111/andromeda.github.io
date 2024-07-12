@@ -24,14 +24,13 @@
     <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
 
         <!-- Incluir Particles.js usando um CDN -->
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </head>
     <body>
         <header class="header">
             <div class="header_menu">
                 <div class="header_logo">
                     <a href="index.html">
-                        <img src="assets/img/logo/logo_svg.svg" alt="Andromeda logo">
+                        <img src="assets/img/logo/logo_svg.svg" alt="Andromeda logo" class="box" data-aos="fade-left" data-aos-duration="1500">
                     </a>
                 </div>
                 <div class="menu">
@@ -44,9 +43,24 @@
                         </ul>
                     </nav>
                 </div>
+                <div class="menu_escondido">
+                    <nav class="">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <hr>
+                            <li><a href="#">Serviços</a></li>
+                            <hr>
+                            <li><a href="#">Tripulação</a></li>
+                            <hr>
+                            <li><a href="#">Portfolio</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="menu_afastado">
                     <div class="menu_responsi">
-                        <li><i class="bx bx-menu"></i></li>   
+                        <li><i class="bx bx-menu"></i>
+                        
+                        </li>   
                     </div>
                     <ul>
                         <li><a href="#">Marcar Reunião</a></li>
@@ -59,6 +73,7 @@
                             <a href="https://api.whatsapp.com/send?phone=+244921401948&text=Olá equipe Andromeda !" target="_blank">Contratar Equipa</a>
                         --> 
                    
+             
                
             </article>
         </header>
@@ -68,6 +83,7 @@
 
         <!-- JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
         <script src="dependencies/meanmenu/js/jquery.meanmenu.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
         <script src="assets/js/main.js" defer></script>
@@ -85,19 +101,8 @@
                 });
             });
 
-            window.addEventListener('scroll', function() {
-                var header = document.querySelector('.header');
-                var menu = document.querySelector('.header_menu');
-                var menu_afastado = document.querySelector(".menu_afastado a");
+        
 
-                if (window.scrollY > header.clientHeight) {
-                    menu.classList.add('menu_scroll');
-                    menu_afastado.classList.add("menu_scroll");
-                } else {    
-                    menu.classList.remove('menu_scroll');
-                }
-            });
-                
             // Inicialize AOS
             AOS.init();
         </script>
