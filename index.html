@@ -20,13 +20,17 @@
 
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-            <!--  Boxicons, oficial site  -->
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+        <!--  Boxicons, oficial site  -->
+        <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 
         <!-- Incluir Particles.js usando um CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
     </head>
     <body>
         <header class="header">
+            <div id="particles-js" style="position: absolute; width: 100%; height: 300px; z-index: -1;"></div>
             <div class="header_menu">
                 <div class="header_logo">
                     <a href="index.html">
@@ -36,10 +40,10 @@
                 <div class="menu">
                     <nav class="menu_fixo">
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Tripulação</a></li>
-                            <li><a href="#">Portfolio</a></li>
+                            <li><a href="#"  class="hvr-grow">Home</a></li>
+                            <li><a href="#" class="hvr-grow">Serviços</a></li>
+                            <li><a href="#" class="hvr-grow">Tripulação</a></li>
+                            <li><a href="#" class="hvr-grow">Portfolio</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -59,7 +63,6 @@
                 <div class="menu_afastado">
                     <div class="menu_responsi">
                         <li><i class="bx bx-menu"></i>
-                        
                         </li>   
                     </div>
                     <ul>
@@ -67,19 +70,45 @@
                     </ul>
                 </div>
             </div>
-            <article class="header_content">
-               
-                        <!-- 
-                            <a href="https://api.whatsapp.com/send?phone=+244921401948&text=Olá equipe Andromeda !" target="_blank">Contratar Equipa</a>
-                        --> 
-                   
-             
-               
+            <article class="header_content ">
+                <div class="boas_vin content_0">
+                    <img src="assets/img/diversas/illustration-2.png" class="image_esco" alt="Andromeda Coding solutions">
+                    <h1>
+                        Andromeda Coding Solution
+                    </h1>
+
+                    <div class="links_content">
+                        <ul>
+
+                            <li><a href="#" class="whatsapp_link">Contratar a Andromeda <i class="bx bxl-whatsapp"></i> </a></li>
+                            <li> <a href="#">Saber Mais</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="boas_vin">
+    <h1>
+        Andromeda Coding Solution
+    </h1>
+
+    <h2>
+        Transformando sua ideias em <br> ideias Digitais
+    </h2>
+    <p>
+        Crie seu App leve  e sistema Web personalizado <br> 
+        eleve seu projecto em outro nivel 
+    </p>
+                </div>
+                <div class="boas_vin content_2">
+                    <img src="assets/img/diversas/illustration-2.png" alt="">
+                </div>
+                <!-- 
+                    <a href="https://api.whatsapp.com/send?phone=+244921401948&text=Olá equipe Andromeda !" target="_blank">Contratar Equipa</a>
+                --> 
             </article>
         </header>
         <main>
         </main>
-        
 
         <!-- JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -101,10 +130,13 @@
                 });
             });
 
-        
-
             // Inicialize AOS
             AOS.init();
+
+            // Inicialize Particles.js
+            particlesJS.load('particles-js', 'assets/particles.json', function() {
+                console.log('particles.js loaded - callback');
+            });
         </script>
     </body>
     </html>
