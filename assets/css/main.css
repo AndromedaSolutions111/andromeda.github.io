@@ -150,7 +150,7 @@
 
     .menu_afastado a {
         display: inline-block;
-        border: 1px solid #6525E9;
+        border: 1px solid #5A49F8;
         padding: 15px;
         font-size: 16px;
         font-family: "Roboto", sans-serif;
@@ -195,7 +195,7 @@
   
 
     /* Fim das  Configurações do menu */
- 
+
     .header_content{
 
         width: 100%;
@@ -219,12 +219,22 @@
         font-size: 16px;
         font-family: "Exo";
     } 
+    .social_icons{
+        font-size: 22px;
+        margin-left: 30px;
+    }
+    .social_icons i {
+        padding: 5px ;
+        border: 1px solid white;
+        background-color: #ffffff;
+        color:#0486A6;
+    }
     .content_0{ 
         display: none !important;
     }
     
     .content_1 {
-        margin: 100px 90px;
+        margin: 90px 90px;
         
     }
     .content_1 h1{
@@ -341,6 +351,18 @@
     }
     .content_image_titulo h3{
         font-family: "Exo";
+    }
+    .loader {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: #fff; /* Cor de fundo do preloader */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     /* Adicionando responsividade */
 
