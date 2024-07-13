@@ -17,7 +17,7 @@
 
     .header {
         width: 100%;
-        height: 1000px;
+        height: 600px;
         background-size: 100%;
         background-repeat: no-repeat;
         background-image: url('/assets/img/background/fundo_header.png');
@@ -159,6 +159,9 @@
        background-color: white !important;
        outline: none;
     }
+   
+  
+   
 .menu_afastado .bx{
     padding-top: 10px;
     font-size: 25px;
@@ -204,7 +207,7 @@
         flex-wrap: wrap;
         align-items: center;
         height: 500px;
-        background-color:aquamarine;
+        background-color:#00E5BB;
 
 
     }
@@ -256,7 +259,7 @@
     }
      .links_cont li{
         display: inline-block;
-        margin-top: 20px;
+        margin: 30px 10px !important    ;
      }
      .links_cont li a {
         padding: 15px;
@@ -264,10 +267,11 @@
         outline: none;
         background-color:#ffffff;
         margin-top: 300px;
+        color: #5113c4;
     }
      .whatsapp_link{
         background-color: #5113c4 !important;
-        color: white;
+        color: white !important;
         border: white;
        }
     .content_2{
@@ -282,7 +286,26 @@
         height: 90%;
     }
 
+    /* Começando com main  */
 
+    .comenter_{
+        width: 100%;
+        text-align: center;
+
+    }
+    .comenter_ h3{
+        font-size: 33px;
+        font-family: "Exo";
+        color: #00E5BB;
+    }
+    .comenter_ p{
+        font-family: "roboto";
+        font-size: 22px;
+        color: #220455;
+    }
+    ._comenter_span{
+        color: #5113c4;
+    }
 
     /* Adicionando responsividade */
 
@@ -357,5 +380,8 @@
         color: white;
         border: white;
        }
-       
+       .boas_vin{
+        display: none;
+       }
+     
     }
