@@ -207,7 +207,7 @@
         flex-wrap: wrap;
         align-items: center;
         height: 500px;
-        background-color:#00E5BB;
+        background-color:#11FFBD;
 
 
     }
@@ -307,6 +307,41 @@
         color: #5113c4;
     }
 
+    /* comacando main */
+
+    .main_content{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 40px  auto;
+
+    }
+  .main_content_imag{
+
+        width: 400px;
+        height: 350px;
+        margin: 4px;
+       text-align: center;
+
+  }
+    .main_content_imag img{
+        margin: 20px;
+    
+       
+    }
+    .content_image_titulo p{
+
+        font-size: 20px;
+        font-family: "roboto";
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .content_image_titulo h3{
+        font-family: "Exo";
+    }
     /* Adicionando responsividade */
 
     @media (max-width: 803px) {
