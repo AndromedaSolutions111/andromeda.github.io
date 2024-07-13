@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="dependencies/meanmenu/css/meanmenu.min.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
 
 
         <!-- Google Fonts -->
@@ -181,6 +183,80 @@
 
 </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main_content second_contente_main">
+
+    <div class="main_content_imag"  class="box" data-aos="fade-up" data-aos-duration="15000">
+      
+        <div id="accordion">
+            <h3>Apps Mobiles</h3>
+            <div>
+                <p> Nossos aplicativos móveis são projetados para revolucionar a maneira como você interage com o mundo. Combinamos inovação e tecnologia de ponta para criar soluções intuitivas, eficientes e visualmente deslumbrantes.</p>
+            </div>
+            <h3> Cyber Segurança e Segurança da Informação</h3>
+            <div>
+                <p>
+                    Defendemos contra ameaças cibernéticas e garantimos a integridade e confidencialidade dos seus dados. Mantenha seu ambiente digital seguro e confie nos nossos  metodos para proteger o que é mais valioso para você.
+                </p>
+            </div>
+            <h3>Suporte de TI de Excelência </h3>
+            <div>
+                <p>
+                    oferecemos suporte de TI ágil 
+                    e eficiente para garantir o funcionamento impecável da
+                     sua tecnologia. Nossos especialistas estão disponíveis
+                      para resolver problemas técnicos, otimizar sistemas e fornecer assistência personalizada para suas necessidades. Com um atendimento proativo e soluções rápidas, garantimos que sua infraestrutura de TI funcione sem interrupções e seu negócio continue operando com máxima eficiência. Confie na Andromeda para um suporte de TI confiável e de alta qualidade.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_content_imag"  class="box" data-aos="fade-up" data-aos-duration="1500"><img src="assets/img/diversas/undraw_programming_re_kg9v.svg" alt="">
+       
+    </div>
+
+
+
+    
+   
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </main>
 
         <!-- JavaScript -->
@@ -188,6 +264,8 @@
         <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
         <script src="dependencies/meanmenu/js/jquery.meanmenu.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script src="assets/js/main.js" defer></script>
 
         <script>
@@ -202,7 +280,9 @@
                     meanContract: "-"
                 });
             });
-          
+            $( function() {
+            $( "#accordion" ).accordion();
+        } );
             // Inicialize AOS
             AOS.init();
 

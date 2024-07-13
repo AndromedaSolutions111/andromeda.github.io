@@ -352,17 +352,26 @@
     .content_image_titulo h3{
         font-family: "Exo";
     }
-    .loader {
-        position: fixed;
-        left: 0;
-        top: 0;
+    .second_contente_main{
+        background-color: #021240;
         width: 100%;
+        margin-top: 20px;
+        align-items: center !important;
+    }
+    .second_contente_main .main_content_imag{
+        margin-top: 60px;
+    }
+    #accordion{
+        width: 570px;
+        margin: 0 auto;
+       }
+       #accordion h3{
+       background-color: white;
+       color: #021240;
+       }
+    .second_contente_main .main_content_imag img {
         height: 100%;
-        z-index: 9999;
-        background-color: #fff; /* Cor de fundo do preloader */
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin-top: -30px;
     }
     /* Adicionando responsividade */
 
@@ -440,5 +449,11 @@
        .boas_vin{
         display: none;
        }
-     
+       #accordion{
+        width: 370px;
+        margin: 0 auto;
+       }
+       .second_contente_main .main_content_imag img{
+        height: 70%;
+       }
     }
