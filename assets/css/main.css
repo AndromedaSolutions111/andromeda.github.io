@@ -452,8 +452,10 @@
        #accordion{
         width: 370px;
         margin: 0 auto;
+        padding: 10px;
        }
        .second_contente_main .main_content_imag img{
         height: 70%;
+        margin-top: 60px !important;
        }
     }
