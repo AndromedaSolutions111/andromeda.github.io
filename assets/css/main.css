@@ -207,7 +207,6 @@
         flex-wrap: wrap;
         align-items: center;
         height: 500px;
-        background-color:#11FFBD;
 
 
     }
@@ -241,7 +240,7 @@
         margin-top: 50px;
         font-size: 28px;
         font-family: "eXO";
-        color: rgb(4, 134, 166);
+        color:#335EEA;
 
 
     }
@@ -275,10 +274,10 @@
         padding: 15px;
         font-family: "Exo";
         outline: none;
-        background-color:#ffffff;
+        background-color:#3F3D56;
         margin-top: 300px;
-        color: #5113c4;
-    }
+        color: white ; 
+       }
      .whatsapp_link{
         background-color: #5113c4 !important;
         color: white !important;
@@ -372,6 +371,28 @@
     .second_contente_main .main_content_imag img {
         height: 100%;
         margin-top: -30px;
+    }
+    .terceiro_content{
+        margin-top: 70px;
+        background-color: rgba(255, 255, 255, 0.885);
+    }
+    .div_tripulacao{
+      width: 400px;
+      font-family: "Exo";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10px;
+      
+    }
+
+    .div_tripulacao img{
+        height: 90% !important;
+        border-radius: 05%;
+    }
+    .div_tripulacao h3{
+        color: #262a34;
     }
     /* Adicionando responsividade */
 
